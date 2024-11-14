@@ -80,7 +80,7 @@ jobs:
       shell: bash
       run: |
         echo "Building the Spring Boot app using Maven"
-        mvn clean install 
+        mvn clean install -DskipTests
         echo "Build completed successfully"
 
     - name: Perform CodeQL Analysis
